@@ -1,0 +1,92 @@
+        /* Tông màu sáng dịu – dễ nhìn */
+        :root {
+            --bg-color: #f3f4f6;        /* nền kem xám nhẹ */
+            --card-bg: #ffffff;         /* nền nội dung trắng mịn */
+            --text-main: #1f2937;       /* chữ đen xám dễ đọc */
+            --highlight: #d97706;       /* vàng nâu ấm, không chói */
+            --quote-bg: #fef3c7;        /* nền vàng nhạt dịu */
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Khung chính */
+        .container {
+            background-color: var(--card-bg);
+            width: 100%;
+            max-width: 700px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--highlight);
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--highlight);
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h3 {
+            font-weight: 300;
+            font-style: italic;
+            color: #4b5563;
+            margin-top: 0;
+        }
+
+        .book-cover {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            margin-top: 15px;
+            border: 2px solid #e5e7eb;
+        }
+
+        /* Tiêu đề phần */
+        h2 {
+            color: var(--highlight);
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 10px;
+            margin-top: 30px;
+            font-size: 1.4em;
+        }
+
+        /* Trích dẫn */
+        blockquote {
+            background-color: var(--quote-bg);
+            border-left: 5px solid var(--highlight);
+            margin: 30px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #7c2d12;
+            border-radius: 0 8px 8px 0;
+            font-family: 'Times New Roman', serif;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 20px;
+        }
